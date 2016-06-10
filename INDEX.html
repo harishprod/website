@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>the school page</title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+body{
+  margin:0;
+  padding:0;
+
+        }
+.container {
+position: relative;       
+margin: 0 auto;
+         }
+
+#navlink{
+         display:inline-block;
+     }
+
+
+#my-carousel{
+         height:110%;
+         width:auto;
+     }
+.news{
+    background-color:rgba(53, 124, 139, 0.2);
+     padding-top:30px;
+    padding-bottom:90px;
+}
+.news h2 {
+	color: #1f2624;
+     font-family:Verdana;
+     font-stretch:narrower;
+}
+.news .pic {
+	width:80%; height:80%;
+    margin-right:20px;
+}
+.news .info{
+    text-align:center;
+    margin-left:25px;
+}
+.news .pic img {
+	border-radius: 5px;
+}
+.tabs{
+   background-color:rgba(250, 250, 250, 0.66);
+ padding:30px 0 150px 0;
+}
+.tabs ul{
+    margin-bottom:5px;
+}
+.tabs #tablink{
+    font-size:150%;
+    line-height:initial;
+}
+.tabs p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font:small;
+}
+.tabs .tab-pane{
+    height:100%;
+    margin:20px;
+}
+.links{
+    padding-top:80px;
+    padding-bottom:100px;
+    background-color:rgba(64, 133, 148, 0.2);
+}
+.links #link-col-3,#link-col-2{
+    margin-bottom:35px;
+}
+.links li{
+    list-style-type:none;
+    font-size:20px;
+        border-bottom:2px solid rgba(109, 142, 132, 0.7);
+}
+.links #link-col-1 ul li , #link-col-3 ul li, #link-col-2 ul li{
+  font-family:Verdana; 
+ border-bottom-style:groove;
+ margin-bottom:10px;
+ padding:5px;
+}
+.links li a:hover {
+    text-decoration-color:coral;   
+    font-size:93%;
+}
+.links .form-group #name, #emailinput{
+    height:50px;
+}
+.links h1{
+
+}
+.accreditation{
+    padding-top:40px;
+    padding-bottom:90px;
+}
+
+.accreditation .logos li{
+     display:inline-block;
+    width:10.5% ;
+    height:20%;
+}  
+.accreditation h4{
+    padding-bottom:30px;
+}
+.links textarea{
+    resize:vertical;
+    font-family:Verdana;
+    font-style:normal;  
+    border-color:rgba(42, 68, 60, 0.4);
+}
+.links input{
+    border-color:rgba(42, 68, 60, 0.4);
+  
+}
+.footer{
+background-color:rgba(105, 87, 102, 0.2);
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.footer li{
+    text-align:center;
+    display:inline-block;
+    margin-right:10px;
+
+}
+.footer p{
+    text-align:center;
+}
+
+/*
+
+.slider .noticeboard{
+    border:8px double rgba(59, 85, 77, 0.40);
+    box-shadow:0 0 5px 0 rgba(2,3,0,0.1),0px 0 1px 0 #fff inset;
+   box-sizing:border-box;
+    padding-left:25px;
+    margin-left:15px;
+}
+.slider .noticeboard h4,p{
+    text-align:center;
+}
+.slider #my-carousel{
+    width:60%;
+     box-shadow:0 0 5px 0 rgba(1,1,0,0.1),0px 0 1px 0 #fff inset;
+   margin-bottom:20px;
+    height:50%;
+    text-align:center;
+}
+    .slider{
+    background-color:rgba(235, 234, 234, 0.68);
+   padding-top:30px;
+    padding-bottom:100px;
+} 
+
+    */
+
+ .slider {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgba(56, 132, 143, 0.59);
+        }
+
+.container .jumbotron{
+       padding-left:0;
+    padding-right:0;
+}
+.jumbotron{
+    padding:0;
+    margin:0;
+}
+.header{
+    background-color:rgba(224, 224, 224, 0.66);
+}
+.header .p{
+    font-family:'Times New Roman', Times, serif;
+
+}
+.header .head{
+background-color:transparent;
+}
+.header .col-lg-2{
+    height:220px;
+}
+
+.header .col-lg-2 img{
+    border-radius:5px;  
+}
+.header .mediaicon li{
+    display:inline-block;
+    list-style-type:none;
+    float:right;
+  
+}
+.navigation{
+background-color:rgba(168, 176, 172, 0.82);
+
+}
+.header li img{
+      width:90%;
+    height:90%;
+    
+}
+    </style>
+</head>
+<body >
+    
+    <!--------------------------------------------------------------------------->
+    <section class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </section>
+    <!--------------------------------------------------------------------------->
+    <div class="header">
+        <div class="container head" >
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3" >
+                   <img src="images/gitam475.jpg"  style="width:100% ; height:70%;"/>
+            </div>
+
+            <div class="col-lg-10 col-md-10 col-sm-9">
+                <p style="font-size:40px;"><b> this public school private Ltd.</b> </p>      
+            </div>
+            <div>
+                <ul class="mediaicon">
+                    <li><a href="www.fb.com" target="_blank"><img src="images/facebook.png" /></a></li>
+                    <li><a href=""><img src="images/twitter.png" /></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" /></a></li>
+                </ul>
+            </div>
+           
+        </div>
+
+    </div>
+    <!--------------------------------------------------------------------------->
+
+
+    <section class="slider">
+        <div class="container">
+            <div id="my-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#my-carousel" data-slide-to="1"></li>
+                    <li data-target="#my-carousel" data-slide-to="2"></li>
+                    <li data-target="#my-carousel" data-slide-to="3"></li>
+                    <li data-target="#my-carousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <!-- hree i used images of 1200*675-->
+                        <img alt="First slide"src="images/childphoto1.jpg" >
+                        <div class="carousel-caption">
+                            <h3>Caption heading 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="Second slide" src="images/childphoto2.jpg">
+                        <div class="carousel-caption">
+                            <h3>Caption heading 2</h3>
+                            <p>Morbi eget libero quis metus consectetur semper.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="Third slide" src="images/childphoto16.jpg">
+                        <div class="carousel-caption">
+                            <h3>he won 2</h3>
+                            <p>ye bnada in baccho ka principle h.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="Fourth slide" src="images/childphoto3.jpg">
+                        <div class="carousel-caption">
+                            <h3>Caption heading 2</h3>
+                            <p>Morbi eget libero quis metus consectetur semper.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="Fifth slide" src="images/childphoto5.jpg">
+                        <div class="carousel-caption">
+                            <h3>Caption heading 3</h3>
+                            <p>Suspendisse ullamcorper massa eget eleifend iaculis.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#my-carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#my-carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------------------->
+    <section class="news">
+        <div class="container">
+            <h2>from our principl..</h2><br />
+            <article class="col-lg-6 col-md-6 col-sm-6">
+                <div class="pic"> <img style="width:100%;"src="images/ccc.jpg" alt=""></div>
+             
+            </article>
+            <article class="col-lg-6 col-md-6 col-sm-6 ">
+                
+                <div class="info">
+                   <div style="float:right;">
+                       <h4>Omnis iste natus error sit voluptatem accusantium </h4>
+                       <p class="date">14 APR 2014, Jason Bang</p>
+                       <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores (...)</p>
+                       <a class="more" href="#">Read more</a>
+                   </div>
+                </div>
+            </article>
+         
+        </div>
+        <!-- / container -->
+    </section>
+    <!--------------------------------------------------------------------------->
+    <section class="tabs">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified nav-stacked">
+                <li role="presentation" class="active"><a id="tablink" href="#home" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a id="tablink"  href="#profile" data-toggle="tab">Profile</a></li>
+                <li role="presentation"><a  id="tablink" href="#message" data-toggle="tab">Messages</a></li>
+                <li role="presentation"><a id="tablink"  href="#clubs" data-toggle="tab">clubs</a></li>
+                <li role="presentation"><a  id="tablink" href="#campus" data-toggle="tab">campus</a></li>
+                <li role="presentation"><a id="tablink"  href="#gallary" data-toggle="tab">gallary</a></li>
+                <li role="presentation"><a id="tablink"  href="#result" data-toggle="tab">result</a></li>        
+            </ul>
+            <hr />
+          <div class="tab-content">
+              <div class="tab-pane fade in active" id="home" >
+                  <p> ghgfh fghjfg fghFood truck fixie locavore, accusamus mcsweeney's marfa nulla 
+                  single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+                   stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                  lhp if ima worok hwuat ourjf br ths bua iam not sure to true </p>
+              </div>
+              <div class="tab-pane" id="profile" >
+                  <p>
+                      fgshfgh fghghFood truck fixie locavore, accusamus mcsweeney's marfa nulla
+                      single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+                      stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                 
+                  </p>
+              </div>
+              <div class="tab-pane" id="message">
+                  <p>
+                     gggg Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                      single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+                      stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                  </p>
+              </div>
+              <div class="tab-pane" id="clubs">
+                  <p>
+                      fgjhdj rfnf fg Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                      single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+                      stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                  </p>
+              </div>
+              <div class="tab-pane col-lg-8 col-md-8 col-md-push-2 col-sm -12 col-lg-push-2"  id="campus">
+                  <iframe style="width:100%; height:300px;" src="https://www.youtube.com/embed/18ZzR_KnoK4" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="tab-pane" id="gallary">
+                  <p>
+                      Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                      single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+                      stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                  </p>
+              </div>
+              <div class="tab-pane col-lg-8 col-md-8 col-md-push-2 col-sm -12 col-lg-push-2" id="result">
+                  <iframe style="width:100%; height:300px;"src="https://www.youtube.com/embed/es9J1_YVOg0" frameborder="0" allowfullscreen></iframe>
+              </div>          
+          </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------------------->
+    <section class="links">
+        <div class="container">
+   <div id="link-col-2" class="col-lg-4 col-md-4 col-sm-4">
+          <div><h1 class="glyphicon glyphicon-briefcase"> Address</h1></div>
+       <ul>
+           <li class="address">151 W Adams St<br>Detroit, MI 48226</li>
+           <li class="mail">contact@harriOM.com</li>
+           <li class="phone last" style="font-style:oblique;">(+91) 8220293670</li>
+       </ul>
+            </div> 
+                                                   
+   <div id="link-col-3" class="col-lg-4  col-md-4 col-sm-4">
+   <div><h1 class="glyphicon glyphicon-phone"> Contact_Us</h1></div>
+      <form>
+          <div class="form-group">
+              <label for="name"> Name:</label>
+              <input class="form-control" type="text" id="name" placeholder="Name here.." />
+          </div>
+          <div class="form-group">
+              <label for="emailinput">E-mail us:</label>
+              <input type="email" class="form-control" id="emailinput" placeholder="gmail here.."  />
+          </div>
+    
+            <div class="form-group">
+                <label></label>
+                <textarea class="form-control" name="textarea" placeholder="write somthing here.."></textarea>
+            </div>
+          <div class="btn btn-group">
+             <button type="submit" class="btn-lg btn-danger" name="submit" >Submit </button>
+          </div>
+      </form>
+    </div>  
+            <div id="link-col-1" class="col-lg-4  col-md-4 col-sm-4">
+                <div><h1 class="glyphicon glyphicon-tags"> Links :</h1></div>
+                <ul>
+                    <li ><a href="#">Admissions</a></li>
+                    <li ><a href="#"> Any Quary</a></li>
+                    <li ><a href="#"> Make Payment</a></li>
+                    <li ><a href="#">Our policies</a></li>
+                    <li ><a href="#">History</a></li>
+                </ul>
+            </div>  
+    </div>
+    </section>
+
+    <!--------------------------------------------------------------------------->
+    <section class="accreditation">
+        <div class="container">
+            <div class="container"style="text-align:center; color:chocolate;text-decoration-style:wavy;">
+             <h4 id="accriditation bar" style="width:100%;">------&diams; Accreditation and Affiliations &diams;------</h4>
+            </div>
+        <ul class="logos">                  
+ <!--here the images size is 100* 50 --a very high internation school probably will have this much accriditation  ----->
+              <li><img src="images/logo.ac.1.png" style="height:100%; width:100%;"/> </li>
+              <li><img src="images/logo.ac.2.png" style="height:100%; width:100%;"/> </li>
+              <li><img src="images/logo.ac.3.png" style="height:100%; width:100%;" /> </li>
+              <li><img src="images/logo.ac.4.png" style="height:100%; width:100%;" /> </li>
+              <li><img src="images/logo.ac.5.png" style="height:100%; width:100%;" /> </li>
+              <li><img src="images/logo.ac.6.png" style="height:100%; width:100%;" /> </li>
+              <li><img src="images/logo.ac.7.png" style="height:100%; width:100%;" /> </li>
+              <li><img src="images/logo.ac.8.png" style="height:100%; width:100%;" /> </li>
+         
+     </ul>
+        </div>
+    </section>
+    <!--------------------------------------------------------------------------->
+    <footer class="footer">
+      <div class="container">
+     <div class="footer-menu">
+         <p>© 2015 - 16 The following School. All Rights Reserved.</p>
+     </div>
+          <div class="col-lg-offset-3">
+              <ul>
+                  <li><a href="#">Acknowledgements |</a></li>        
+                  <li><a href="#">School News |</a></li>
+                  <li><a href="#">Resources Center |</a></li><li>
+                  <a href="#">Academics FAQs |</a></li>
+                  <li><a href="#">Giving FAQs |</a></li>
+              </ul>
+          </div>
+          <div>
+              <p>Produced by<a htref="#"> <b> THE MAN</b></a></p>
+          </div>
+      </div>
+    </footer>
+    <!--------------------------------------------------------------------------->
+  <script>
+      (function ($) { // Begin jQuery
+          $(function () { // DOM ready
+              // If a link has a dropdown, add sub menu toggle.
+              $('nav ul li a:not(:only-child)').click(function (e) {
+                  $(this).siblings('.nav-dropdown').toggle();
+                  // Close one dropdown when selecting another
+                  $('.nav-dropdown').not($(this).siblings()).hide();
+                  e.stopPropagation();
+              });
+              // Clicking away from dropdown will remove the dropdown class
+              $('html').click(function () {
+                  $('.nav-dropdown').hide();
+              });
+              // Toggle open and close nav styles on click
+              $('#nav-toggle').click(function () {
+                  $('nav ul').slideToggle();
+              });
+              // Hamburger to X toggle
+              $('#nav-toggle').on('click', function () {
+                  this.classList.toggle('active');
+              });
+          }); // end DOM ready
+      })(jQuery); // end jQuery
+  </script>
+    <!--------------------------------------------------------------------------->
+    <script src="scripts/jquery-2.2.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+</body>
+</html>
